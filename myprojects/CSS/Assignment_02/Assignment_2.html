@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Web Layout - Case 2</title>
-    <meta content="IJSE, Basic Web Layout" name="keywords">
+    <title>Assignment 02</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font/css/all.css">
     <style>
-        header{
+        header {
             position: relative;
             height: 80px;
             box-shadow: -2px 6px 9px -4px #917a7a;
         }
 
-        header>img{
+        header > img {
             width: 213px;
             margin: 21px;
         }
 
-        header>ul{
+        header > ul {
             position: absolute;
             right: 30px;
             bottom: 0;
@@ -29,49 +29,103 @@
             list-style: none;
             color: #4a3a3a;
         }
-        header>ul>li{
+
+        header > ul > li {
             padding: 0 10px 0 10px;
             display: inline-block;
         }
-        header>ul>li:hover{
+
+        header > ul > li:hover {
             cursor: pointer;
             color: red;
         }
 
-        body>main>section>section>div>img{
-            width: 300px;
-            position: absolute;
-        }
 
-        main>nav>ul{
+        main > nav > ul {
+            list-style: none;
             color: white;
         }
 
-        main{
+        main > nav > ul > li {
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+
+        main > nav > ul > li > a {
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+        }
+
+        main > nav > ul > li > a:hover {
+            color: orange;
+        }
+
+        main {
             position: relative;
         }
-        main>section{
-            position: absolute;
-        }
-        main>nav{
-            position: fixed;
+
+        main > nav {
             background: purple;
+            position: absolute;
             width: 200px;
             top: 0;
             bottom: 0;
             margin: auto;
         }
-        main>section>p{
+
+        main > section > section {
+            position: relative;
             margin-left: 200px;
+            height: 250px;
         }
 
+        main > section > section > div {
+            position: absolute;
+            height: 250px;
+            width: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(1) {
+            left: 0;
+            background-image: url("assets/images/02.png");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 3);
+            background-image: url("assets/images/02.png");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            left: calc((100% / 3) * 2);
+            background-image: url("assets/images/02.png");
+            background-size: cover;
+        }
+
+
+        main > section > p {
+            margin-left: 200px;
+            padding: 10px;
+        }
+
+        footer {
+            background: grey;
+            height: 30px;
+        }
+
+        body > footer > p {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <img alt="" src="assets/images/ijselogo.png">
-
     <ul>
         <li>Home</li>
         <li>Service</li>
@@ -83,17 +137,17 @@
 <main>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Service</li>
-            <li>Contacts</li>
-            <li>About Us</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
     <section>
         <section>
-            <div><img src="assets/images/02.png" alt=""></div>
-            <div><img src="assets/images/online-support-2502115-2102346.png" alt=""></div>
-            <div><img src="assets/images/online-report-concept-illustration_114360-5637.jpg" alt=""></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci cumque debitis dignissimos dolorem
             dolores esse et in magni minus molestiae necessitatibus recusandae, sapiente tempora ullam! Cumque
@@ -119,6 +173,27 @@
         <p>Accusantium aut, consequuntur illo molestiae nemo neque perspiciatis, quos sed, sunt tempora tempore
             voluptas. Accusantium ea earum facilis harum laborum repellat voluptates. Eos harum incidunt modi pariatur
             veritatis vitae voluptas.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci cumque debitis dignissimos dolorem
+            dolores esse et in magni minus molestiae necessitatibus recusandae, sapiente tempora ullam! Cumque
+            exercitationem necessitatibus quas.</p>
+        <p>Adipisci amet aperiam asperiores aspernatur consequatur, ex fugiat id incidunt laudantium molestiae, natus
+            nostrum porro, quam qui quisquam. Atque aut cumque dolorem eos expedita laborum omnis quam tenetur
+            voluptatem voluptates.</p>
+        <p>Aliquam at aut cumque deleniti dicta, facere illo in incidunt laboriosam, maiores minus non numquam obcaecati
+            odio officia perspiciatis placeat provident quod repellat, reprehenderit repudiandae rerum sunt ut
+            voluptatem voluptatum!</p>
+        <p>Commodi doloremque doloribus eos ex fugit harum illo, vel! Aut consequuntur cumque deleniti earum fuga iste,
+            natus nobis non nostrum placeat, quibusdam recusandae repellat repudiandae rerum sed, ullam veritatis
+            voluptate!</p>
+        <p>Asperiores consectetur eius facilis harum illo illum mollitia nam quos unde voluptatum. Asperiores,
+            consequuntur cupiditate deleniti dolorum est et, excepturi fuga itaque minus mollitia nam omnis praesentium
+            tenetur voluptas voluptatem.</p>
+        <p>Ad amet consectetur, cupiditate, dignissimos ipsum, magni modi necessitatibus neque quae quam quia quod
+            suscipit tempore veniam voluptate! Accusamus adipisci aliquam consequuntur et ex, fugiat illo laudantium
+            porro reprehenderit temporibus?</p>
+        <p>Cum cupiditate fuga fugiat inventore laudantium officiis possimus recusandae similique ut, voluptate! Ad amet
+            asperiores dicta doloribus ducimus exercitationem illo ipsum molestiae, nam nobis officiis provident
+            quibusdam sed suscipit tempore!</p>
 
     </section>
 </main>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        section {
+            position: relative;
+            height: 100vh;
+        }
+
+        div {
+            border-radius: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body {
+            position: relative;
+        }
+
+        body > div {
+            position: fixed;
+            height: 200px;
+            width: 200px;
+            border: 15px solid red;
+            z-index: 10;
+        }
+
+        body > div > div {
+            position: fixed;
+            height: 230px;
+            width: 230px;
+            border: 15px solid grey;
+            z-index: 8;
+        }
+        section > div {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            z-index: 5;
+        }
+        body > section > div > p {
+            text-align: center;
+            padding-top: 55px;
+            color: white;
+            font-family:  "Times New Roman", monospace;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        body > section:nth-child(2) > div {
+            background: purple;
+        }
+
+        body > section:nth-child(3) > div {
+            background: #0c8ab4;
+        }
+
+        body > section:nth-child(4) > div {
+            background: #ee3776;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div></div>
+</div>
+<section>
+    <div><p>Hello</p></div>
+</section>
+<section>
+    <div><p>Welcome to</p></div>
+</section>
+<section>
+    <div><p>Institute of Software Engineering</p></div>
+</section>
+</body>
+</html>
