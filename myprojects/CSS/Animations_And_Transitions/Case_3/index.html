@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations & Transitions(Case 3)</title>
+    <style>
+        section {
+            width: 200px;
+            height: 100px;
+            background-color: darkblue;
+            animation-name: test;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        @keyframes test {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: blue;
+                transform: rotate(72deg);
+            }
+            20% {
+                left: 1300px;
+                top: 0;
+                background-color: yellow;
+                transform: rotate(144deg);
+
+            }
+            40% {
+                top: 500px;
+                left: 1300px;
+                background-color: red;
+                transform: rotate(216deg);
+
+            }
+            60% {
+                top: 600px;
+                left: 600px;
+                background-color: deeppink;
+                transform: rotate(288deg);
+
+            }
+            80% {
+                top: 500px;
+                left: 0;
+                background-color: orange;
+                transform: rotate(360deg);
+
+            }
+            100% {
+                top: 0;
+                left: 0;
+                background-color: purple;
+                transform: rotate(0deg);
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section>
+
+</section>
+</body>
+</html>
