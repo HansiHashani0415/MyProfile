@@ -57,7 +57,7 @@
             background-size: cover;
         }
 
-        body > main > section:nth-child(1) > section:nth-child(1){
+        body > main > section:nth-child(1) > section:nth-child(1) {
             position: absolute;
             left: 0;
             bottom: 0;
@@ -66,16 +66,18 @@
             height: 200px;
             font-size: 14px;
         }
-        body > main > section:nth-child(1) > section:nth-child(1)>h3{
+
+        body > main > section:nth-child(1) > section:nth-child(1) > h3 {
             transform: rotate(90deg);
         }
 
-        body > main > section:nth-child(1) > section:nth-child(1)>div{
+        body > main > section:nth-child(1) > section:nth-child(1) > div {
             border-bottom: 1px solid white;
             transform: rotate(
                     90deg
             );
         }
+
         body > main > section:nth-child(1) > section:nth-child(2) {
             position: absolute;
             left: 300px;
@@ -141,10 +143,12 @@
             font-size: 30px;
             padding-bottom: 15px;
         }
-        body > main > section:nth-child(1) > section:nth-child(3) > nav > ul > li:hover{
+
+        body > main > section:nth-child(1) > section:nth-child(3) > nav > ul > li:hover {
             cursor: pointer;
             color: #E20763;
         }
+
         main > section:nth-child(2) {
             width: 100vw;
             height: 100vh;
@@ -152,6 +156,32 @@
             background-size: cover;
             background-color: #2b2b2b;
             filter: contrast(80%);
+        }
+
+        main > section:nth-child(2) > section:nth-child(2) {
+            position: absolute;
+            border: 2px solid red;
+            height: 749px;
+            width: 500px;
+            left: 240px;
+            margin: auto;
+        }
+
+        main > section:nth-child(2) > section:nth-child(2) > div:nth-child(1) {
+            height: 684px;
+            width: 323px;
+            background-color: #65082F;
+            border: 2px solid #E20763;
+        }
+
+        main > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 700px;
+            width: 380px;
+            border: 2px solid green;
         }
     </style>
 
@@ -203,9 +233,8 @@
     <section>
         <section></section>
         <section>
-            <div>
-
-            </div>
+            <div></div>
+            <div></div>
         </section>
         <section></section>
     </section>
