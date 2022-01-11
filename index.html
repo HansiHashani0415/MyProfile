@@ -7,15 +7,38 @@
     <meta name="description" content="I'm Hansi Hashani, And I'm a Software Engineer.">
     <meta name ="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#E20763">
-    <link rel="stylesheet" href="assets/css/Fonts/css/all.css">
+    <link rel="stylesheet" href="assests/css/Fonts/css/all.css">
     <link href="assests/css/normalize.css" rel="stylesheet">
 
     <style>
         header{
+            width: 100vw;
             height: 70px;
             border: 2px solid black;
+            position: fixed;
+            background-color: #2b2b2b;
+            color: white;
+            opacity: 0.7;
         }
-        body>header>ul{
+        header>h2{
+            padding-left: 50px;
+        }
+        header>ul {
+            position: absolute;
+            right: 55px;
+            bottom: 25px;
+            margin: auto;
+            list-style: none;
+            font-size: 17px;
+        }
+        header > ul > li {
+            display: inline-block;
+            padding: 0 15px 0 15px;
+        }
+        main>section:nth-child(1){
+            width: 100vw;
+            height: 100vh;
+            background: url("assests/images/homeImage.jpg");
 
         }
     </style>
@@ -25,16 +48,14 @@
 
 <header>
     <h2>Hansi Hashani</h2>
-    <nav>
-        <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SKILLS</li>
-            <li>EDUCATION</li>
-            <li>PORTFOLIO</li>
-            <li>CONTACT</li>
-        </ul>
-    </nav>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SKILLS</li>
+        <li>EDUCATION</li>
+        <li>PORTFOLIO</li>
+        <li>CONTACT</li>
+    </ul>
 </header>
 <main>
     <!--Home Page-->
