@@ -293,7 +293,7 @@
         main > section:nth-child(3)>section:nth-child(2){
             border: 1px solid red;
             width: 100vw;
-            height: 500px;
+            height: 530px;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -305,6 +305,9 @@
 
         main > section:nth-child(3)>section:nth-child(2)>section{
             flex-grow: 1;
+            position: relative;
+            display: flex;
+            flex-direction: row;
         }
         main > section:nth-child(3)>section:nth-child(2)>section:nth-child(1){
             border: 1px solid green;
@@ -321,7 +324,55 @@
             font-family: 'Roboto', sans-serif;
             color: white;
             text-align: center;
+            margin-top: 10px;
         }
+        main > section:nth-child(3)>section:nth-child(2)>section>div{
+            width: 300px;
+            height: 400px;
+            background-color: #65082F;
+            border: 2px solid #E20763;
+            position: absolute;
+            top: 20px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 7px;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section:nth-child(1)>div{
+            margin-right: 0;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section:nth-child(1)>h3{}
+        main > section:nth-child(3)>section:nth-child(2)>section:nth-child(3)>div{
+            margin-left: 0;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section>div{
+            display: flex;
+            flex-direction: column;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section>div>ul{
+            list-style: none;
+
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section>div>ul>li{
+            width: 60px;
+            height: 60px;
+            border: 2px solid #E20763;
+            flex-grow: 1;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section>div>ul>li:nth-child(1){
+            background: url("assests/icon/java-coffee-cup-logo.png");
+            background-size: cover;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section>div>ul>li:nth-child(2){
+            background: url("assests/icon/mysql-logo.png");
+            background-size: cover;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section>div>ul>li:nth-child(3){
+            background: url("assests/icon/download (3).png");
+            background-size: cover;
+        }
+        main > section:nth-child(3)>section:nth-child(2)>section:nth-child(1)>div{}
     </style>
 
 </head>
@@ -399,7 +450,20 @@
         <section>
            <section>
                <h3>Languages</h3>
-               <div></div>
+               <div>
+                   <ul>
+                       <li><</li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+               </div>
+               <div>
+                   <ul>
+                       <li><</li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+               </div>
            </section>
            <section>
                <h3>Tools</h3>
