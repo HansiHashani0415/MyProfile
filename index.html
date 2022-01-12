@@ -637,6 +637,7 @@
             background-size: cover;
             background-color: #2b2b2b;
             filter: contrast(80%);
+            position: relative;
         }
 
         main > section:nth-child(6) > section:nth-child(1) {
@@ -773,123 +774,27 @@
             font-weight: bold;
             width: max-content;
         }*/
-        /* main>section:nth-child(4)>section{
-             position: absolute;
-             width: 217px;
-             height: 291px;
-             left: 0;
-             top: 0;
- margin: auto;
-         }
-         main>section:nth-child(4)>section>h2{
-             font-size: 36px;
-             color: white;
-             font-weight: bold;
-
-         }
-         main>section:nth-child(4)>section>h3{
-             font-size: 24px;
-             color: #E20763;
-             font-weight: bold;
-
-         }
-         main>section:nth-child(4)>section:nth-child(2)>section:nth-child(2){
-             !* position: relative; *!
-             width: 111px;
-             !* left: 214px
-         px
-         ; *!
-             margin: auto;
-             !* right: 0; *!
-             top: 69px;
-             height: 500px;
-             display: flex;
-             position: absolute;
-             flex-direction: column;
-             left: 50vw;
-         }
-         main>section:nth-child(4)>section:nth-child(2)>section:nth-child(2)>div{
-             border: 1px solid red;
-             width: 100px;
-             height: 100px;
-             border-radius: 100%;
-         } main>section:nth-child(4)>section:nth-child(2)>section:nth-child(2)>section{
-                       width: 6px;
-                       margin: auto;
-                       height: 100px;
-                       background: white;
-         }
-
-         main>section:nth-child(4)>section:nth-child(2)>section:nth-child(1){
-             position: relative;
-             width: 351px;
-             margin: auto;
-             !* right: 0; *!
-             top: -36px;
-             height: 109px;
-             display: flex;
-             !* justify-content: normal; *!
-             !* left: 206%; *!
-             !* right: -7%; *!
-             left: 865px;
-         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(1)>section{
-             border: 1px solid yellow;
-             width: 200px;
-             margin: auto;
-             height: 109px;
-         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(1)>div{
-                                   width: 100px;
-                                   margin: auto;
-                                   height: 8px;
-                                   !* bottom: 0; *!
-                                   !* margin: 0px; *!
-                                   !* top: 0; *!
-                                   margin-left: 0;
-                                   background: wheat;
-         }
- main>section:nth-child(4)>section:nth-child(2)>section:nth-child(3){
-     border: 1px solid white;
-     position: relative;
-     width: 351px;
-     margin: auto;
-     !* right: 0; *!
-     top: 265px;
-     height: 109px;
-     display: flex;
-     !* justify-content: normal; *!
-     left: 191%;
-         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(3)>section{
-             border: 1px solid yellow;
-             width: 200px;
-             margin: auto;
-             height: 109px;
-         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(3)>div{
-                           width: 100px;
-                           margin: auto;
-                           height: 8px;
-                           !* bottom: 0; *!
-                           !* margin: 0px; *!
-                           !* top: 0; *!
-                           margin-left: 0;
-                           background: wheat;
-         }
-
-
- */
 
         body > main > section:nth-child(4) > section{
             color: white;
+            border: 1px solid red;
+
+
         }
         body > main > section:nth-child(4) > section:nth-child(2) {
             position: relative;
             display: flex;
-            height: 600px;
-            width: 68vw;
+            height: 490px;
+            width: 500px;
             top: 144px;
             bottom: 0;
             right: 0;
             left: 60px;
             margin: auto;
+            text-align: center;
+            font-weight: bold;
+            font-family: Ubuntu;
+            font-size: 15px;
         }
 
         body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) {
@@ -916,25 +821,42 @@
             width: 60px;
             border-radius: 100%;
             margin: auto;
-            border: 1px solid white;
+            border: 2px solid #e20763;
+            color: white;
+            font-size: 40px;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(2) > section > section > div>i{
+            position: absolute;
+            top: 10px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
         body > main > section:nth-child(4) > section:nth-child(2) > section > section > p {
             position: absolute;
-            font-size: 25px;
-            width: fit-content;
+            font-size: 18px;
             top: 12px;
             left: 92px;
             margin: auto;
+            border: 2px solid #e20763;
+            width: 320px;
+            height: 72px;
+            /* align-items: center; */
+            padding-top: 8px;
+            border-radius: 6px;
+            box-shadow: 10px 10px 1px 0px #e20763;
         }
 
         body > main > section:nth-child(4) > section:nth-child(2) > section > section > section {
             position: absolute;
-            height: 139px;
-            width: 6px;
-            left: 28px;
+            height: 102px;
+            width: 3px;
+            left: 31px;
             top: 62px;
-            background: white;
+            background: #e20763;
             margin: auto;
         }
 
@@ -1224,17 +1146,17 @@
 
             <section>
                 <section>
-                    <div></div>
+                    <div><i class="fas fa-graduation-cap"></i></div>
                     <section></section>
                     <p>MR/Kotawila Sri Rathanapala Maha <br> Vidyalaya <br> 2004 - 2009 </p>
                 </section>
                 <section>
-                    <div></div>
+                    <div><i class="fas fa-university"></i></div>
                     <section></section>
                     <p>St. Thomas' Girls' High School <br> 2009 - 2018 </p>
                 </section>
                 <section>
-                    <div></div>
+                    <div><i class="fas fa-book-open"></i></div>
                     <p>Institute of Java Software <br> Engineering <br>2020-2022</p>
                 </section>
             </section>
