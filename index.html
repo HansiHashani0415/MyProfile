@@ -217,9 +217,9 @@
             bottom: 70px;
             margin: auto;
             width: 640px;
-            height: 560px;
+            height: 490px;
             background-color: #1f1b1b;
-            /* opacity: 0.8;*/
+            /* opacity: 0.8; */
             padding: 30px;
         }
 
@@ -228,12 +228,14 @@
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
             color: #E20763;
+            margin: 0;
         }
 
         main > section:nth-child(2) > section:nth-child(3) > h2 {
             font-size: 36px;
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
+            margin: 0;
         }
 
         main > section:nth-child(2) > section:nth-child(3) > p {
@@ -301,11 +303,13 @@
             font-weight: bold;
             font-size: 24px;
             color: #E20763;
+            margin: 0;
         }
 
         main > section:nth-child(3) > section:nth-child(1) > section:nth-child(2) > h2 {
             font-weight: bold;
             font-size: 36px;
+            margin: 0;
         }
 
         main > section:nth-child(3) > section:nth-child(2) {
@@ -328,15 +332,12 @@
         }
 
         main > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) {
-            border: 1px solid green;
         }
 
         main > section:nth-child(3) > section:nth-child(2) > section:nth-child(2) {
-            border: 1px solid green;
         }
 
         main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) {
-            border: 1px solid green;
         }
 
         main > section:nth-child(3) > section:nth-child(2) > section > h3 {
@@ -574,7 +575,6 @@
             margin: auto;
             display: flex;
             flex-direction: row;
-            border: 2px solid black;
         }
 
         main > section:nth-child(5) > section > section:nth-child(5) > div {
@@ -592,7 +592,7 @@
 
         main > section:nth-child(5) > section > section:nth-child(5) > div:hover {
             background-color: grey;
-            opacity: 1.5;
+            opacity: 0.5;
 
         }
 
@@ -775,34 +775,56 @@
             width: max-content;
         }*/
 
-        body > main > section:nth-child(4) > section{
+        body > main > section:nth-child(4) > section {
             color: white;
-            border: 1px solid red;
+            position: absolute;
+            top: 80px;
+            left: 220px;
+            /* margin: 1px; */
+        }
 
-
+        body>main>section:nth-child(4)>section:nth-child(1)>h3{
+            font-size: 24px;
+            font-weight: bold;
+            color: #E20763;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        body>main>section:nth-child(4)>section:nth-child(1)>h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
         }
         body > main > section:nth-child(4) > section:nth-child(2) {
             position: relative;
             display: flex;
-            height: 490px;
-            width: 500px;
-            top: 144px;
+            height: 420px;
+            width: 533px;
+            top: 199px;
             bottom: 0;
             right: 0;
-            left: 60px;
+            left: 23px;
             margin: auto;
             text-align: center;
             font-weight: bold;
             font-family: Ubuntu;
             font-size: 15px;
+            background: #1f1b1b;
+            /* justify-content: space-evenly; */
+            padding: 30px;
+            border-radius: 13px;
         }
+
 
         body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) {
             position: relative;
             display: flex;
             flex-direction: column;
             height: 100%;
-            width: 100%;
+            width: 85%;
+            margin: auto;
         }
 
         body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) {
@@ -1138,7 +1160,6 @@
     <!--Education Page-->
     <section>
         <section>
-
             <h3>I'm qualified with</h3>
             <h2>Education</h2>
         </section>
@@ -1235,7 +1256,9 @@
 
 </main>
 <footer>
+<!--
     <p>Copyright 2022 | All rights reserved. Designed and Developed by Hansi Hashani.</p>
+-->
 </footer>
 
 </body>
