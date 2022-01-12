@@ -768,6 +768,172 @@
             font-weight: bold;
             width: max-content;
         }*/
+        /* main>section:nth-child(4)>section{
+             position: absolute;
+             width: 217px;
+             height: 291px;
+             left: 0;
+             top: 0;
+ margin: auto;
+         }
+         main>section:nth-child(4)>section>h2{
+             font-size: 36px;
+             color: white;
+             font-weight: bold;
+
+         }
+         main>section:nth-child(4)>section>h3{
+             font-size: 24px;
+             color: #E20763;
+             font-weight: bold;
+
+         }
+         main>section:nth-child(4)>section:nth-child(2)>section:nth-child(2){
+             !* position: relative; *!
+             width: 111px;
+             !* left: 214px
+         px
+         ; *!
+             margin: auto;
+             !* right: 0; *!
+             top: 69px;
+             height: 500px;
+             display: flex;
+             position: absolute;
+             flex-direction: column;
+             left: 50vw;
+         }
+         main>section:nth-child(4)>section:nth-child(2)>section:nth-child(2)>div{
+             border: 1px solid red;
+             width: 100px;
+             height: 100px;
+             border-radius: 100%;
+         } main>section:nth-child(4)>section:nth-child(2)>section:nth-child(2)>section{
+                       width: 6px;
+                       margin: auto;
+                       height: 100px;
+                       background: white;
+         }
+
+         main>section:nth-child(4)>section:nth-child(2)>section:nth-child(1){
+             position: relative;
+             width: 351px;
+             margin: auto;
+             !* right: 0; *!
+             top: -36px;
+             height: 109px;
+             display: flex;
+             !* justify-content: normal; *!
+             !* left: 206%; *!
+             !* right: -7%; *!
+             left: 865px;
+         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(1)>section{
+             border: 1px solid yellow;
+             width: 200px;
+             margin: auto;
+             height: 109px;
+         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(1)>div{
+                                   width: 100px;
+                                   margin: auto;
+                                   height: 8px;
+                                   !* bottom: 0; *!
+                                   !* margin: 0px; *!
+                                   !* top: 0; *!
+                                   margin-left: 0;
+                                   background: wheat;
+         }
+ main>section:nth-child(4)>section:nth-child(2)>section:nth-child(3){
+     border: 1px solid white;
+     position: relative;
+     width: 351px;
+     margin: auto;
+     !* right: 0; *!
+     top: 265px;
+     height: 109px;
+     display: flex;
+     !* justify-content: normal; *!
+     left: 191%;
+         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(3)>section{
+             border: 1px solid yellow;
+             width: 200px;
+             margin: auto;
+             height: 109px;
+         }  main>section:nth-child(4)>section:nth-child(2)>section:nth-child(3)>div{
+                           width: 100px;
+                           margin: auto;
+                           height: 8px;
+                           !* bottom: 0; *!
+                           !* margin: 0px; *!
+                           !* top: 0; *!
+                           margin-left: 0;
+                           background: wheat;
+         }
+
+
+ */
+
+        body > main > section:nth-child(4) > section{
+            color: white;
+        }
+        body > main > section:nth-child(4) > section:nth-child(2) {
+            position: relative;
+            display: flex;
+            height: 600px;
+            width: 68vw;
+            top: 144px;
+            bottom: 0;
+            right: 0;
+            left: 60px;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) {
+            position: relative;
+        }
+        body > main > section:nth-child(4) > section:nth-child(2) > section > section {
+            position: relative;
+            height: 202px;
+            width: 100%;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(2) > section > section > div {
+            position: absolute;
+            left: 0;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            margin: auto;
+            border: 1px solid white;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(2) > section > section > p {
+            position: absolute;
+            font-size: 25px;
+            width: fit-content;
+            top: 12px;
+            left: 92px;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(2) > section > section > section {
+            position: absolute;
+            height: 139px;
+            width: 6px;
+            left: 28px;
+            top: 62px;
+            background: white;
+            margin: auto;
+        }
+
+
         @media all and (min-width: 320px) and (max-width: 375px) {
             header {
                 height: 50px;
@@ -814,21 +980,104 @@
                 width: 87px;
                 border-radius: 25px;
             }
+
             body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) {
                 margin-left: 15px;
                 margin-top: 16px;
             }
+
             body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) > h3 {
                 font-size: 13px;
             }
+
             body > main > section:nth-child(1) > section:nth-child(3) {
                 display: none;
             }
 
-            element.style {
-            }
             main > section:nth-child(1) {
-                height: 29vh;
+                height: 30vh;
+            }
+
+            main > section:nth-child(2) > section:nth-child(2) {
+                height: 274px;
+                width: 159px;
+                left: 0;
+                right: 0;
+                top: 28px;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) {
+                right: 0;
+                bottom: 24px;
+                width: 217px;
+                height: 291px;
+                padding: 34px;
+                left: 0;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) > h3:nth-child(1) {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) > h2 {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) > p {
+                font-size: 12px;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) > section {
+                height: 98px;
+                width: 221px;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) > div > h3 {
+                font-size: 13px;
+            }
+
+            main > section:nth-child(2) > section:nth-child(3) > div {
+                height: 35px;
+                width: 119px;
+                border-radius: 20px;
+            }
+
+            main > section:nth-child(2) {
+
+                height: 98vh;
+            }
+
+            body > footer {
+                display: none;
+            }
+
+            main > section:nth-child(3) {
+                height: 125vh;
+            }
+
+            main > section:nth-child(3) > section:nth-child(1) > section:nth-child(2) > h3 {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            main > section:nth-child(3) > section:nth-child(1) > section:nth-child(2) > h2 {
+                font-size: 18px;
+                margin: 0;
+
+            }
+
+            main > section:nth-child(3) > section:nth-child(1) > section:nth-child(2) {
+                top: 20px;
+                left: 40px;
+                margin: 0;
+            }
+
+            main > section:nth-child(3) > section:nth-child(2) {
+                width: 89vw;
+                height: 600px;
+                flex-direction: column;
             }
         }
     </style>
@@ -960,7 +1209,33 @@
         </section>
     </section>
     <!--Education Page-->
-    <section></section>
+    <section>
+        <section>
+
+            <h3>I'm qualified with</h3>
+            <h2>Education</h2>
+        </section>
+        <section>
+
+            <section>
+                <section>
+                    <div></div>
+                    <section></section>
+                    <p>MR/Godagama Anagarika <br> Dharmapala Vidyalaya </p>
+                </section>
+                <section>
+                    <div></div>
+                    <section></section>
+                    <p>MR/Matara Central <br> College </p>
+                </section>
+                <section>
+                    <div></div>
+                    <p>Institute of Java Software <br> Engineering</p>
+                </section>
+            </section>
+
+        </section>
+    </section>
     <!--Projects Page-->
     <section>
         <section>
