@@ -552,13 +552,64 @@
             margin: auto;
             display: flex;
             flex-direction: row;
-            border: 2px solid black;
         }
 
         main > section:nth-child(5) > section > section:nth-child(5) > div {
             flex-grow: 1;
             border: 1px solid red;
+            margin: 20px;
+            position: relative;
+            box-shadow: 1px 1px 1px 1px grey;
         }
+
+        main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(1) {
+            background: url("assests/images/Screenshot 2021-11-08 131105.jpg");
+            background-size: cover;
+        }
+
+        main > section:nth-child(5) > section > section:nth-child(5) > div:hover {
+            background-color: grey;
+            opacity: 1.5;
+
+        }
+
+        main > section:nth-child(5) > section > section:nth-child(5) > div > h3{
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+        main > section:nth-child(5) > section > section:nth-child(5) > div > div {
+            width: 80px;
+            height: 22px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin: auto;
+            border: 2px solid #E20763;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 3px;
+            padding-top: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(2) {
+            background: url("assests/images/Screenshot 2021-12-27 204532.jpg");
+            background-size: cover;
+        }
+
+        main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(3) {
+            background: url("assests/images/Screenshot 2021-11-08 133354.jpg");
+            background-size: cover;
+        }
+
+        /*main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(4) {
+            background: url("assests/images/Screenshot 2021-11-08 131458.jpg");
+            background-size: cover;
+        }*/
 
     </style>
 
@@ -713,9 +764,18 @@
                 <div>Assignments</div>
             </section>
             <section>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <h3>Hotel Management System</h3>
+                    <div>View More</div>
+                </div>
+                <div>
+                    <h3>Student Registrations System</h3>
+                    <div>View More</div>
+                </div>
+                <div>
+                    <h3>Vehicle Parking System</h3>
+                    <div>View More</div>
+                </div>
             </section>
         </section>
     </section>
