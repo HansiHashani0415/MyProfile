@@ -636,8 +636,8 @@
 
         main > section:nth-child(6) > section:nth-child(1) {
             position: absolute;
-            top: 50px;
-            left: 100px;
+            top: 90px;
+            left: 137px;
             border: 1px solid white;
             width: 600px;
             height: 500px;
@@ -649,12 +649,34 @@
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
             color: #E20763;
-
+            margin: 0;
 
         }
-
-        main > section:nth-child(6) > section:nth-child(1) > h3:nth-child(2) {
-
+        main > section:nth-child(6) > section:nth-child(1) > section {
+            width: 650px;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        main > section:nth-child(6) > section:nth-child(1) > section>div>input {
+            /*width: 90%;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid #afa7a7;
+            background: transparent;
+            font-family: monospace;
+            font-size: 20px;*/
+            width: 90%;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid #afa7a7;
+            background-color: white;
+/*
+            background: transparent;
+*/
+            font-family: monospace;
+            font-size: 20px;
         }
 
         main > section:nth-child(6) > section:nth-child(1) > h2 {
@@ -662,18 +684,17 @@
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
             color: white;
-
+            margin: 10px 0 0 0;
         }
 
         main > section:nth-child(6) > section:nth-child(2) {
             position: absolute;
             bottom: 85px;
-            right: 100px;
+            right: 58px;
             border: 1px solid white;
-            width: 600px;
+            width: 549px;
             height: 500px;
             color: white;
-            right: 0;
 
         }
         main > section:nth-child(6) > section:nth-child(2)>ul{
@@ -689,8 +710,19 @@
             font-size: 42px;
             padding-right: 70px;
         }
+        main > section:nth-child(6) > section:nth-child(2)>ul:nth-child(1){
+            position: absolute;
+            top: 60px;
+            left: 30px;
+            margin: auto;
+            font-size: 25px;
+            padding-right: 70px;
+        }
         main > section:nth-child(6) > section:nth-child(2)>ul:nth-child(2)>li{
             padding-right: 30px;
+        }
+        main > section:nth-child(6) > section:nth-child(2)>ul:nth-child(1)>li{
+            padding-bottom: 30px;
         }
         main > section:nth-child(6) > section:nth-child(2)>ul:nth-child(2)>li:hover{
             cursor: pointer;
@@ -698,6 +730,9 @@
         }
         main > section:nth-child(6) > section:nth-child(2)>ul:nth-child(2)>li{
             flex-direction: column;
+        }
+        main > section:nth-child(6) > section:nth-child(2)>ul:nth-child(1)>li>i{
+            padding-right: 30px;
         }
     </style>
 
@@ -866,7 +901,20 @@
             <h3>Got a Problem?</h3>
             <h3>Feel free to</h3>
             <h2>Contact Me</h2>
-            <section></section>
+            <section>
+                <div>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <input type="text" placeholder="E-mail">
+                </div>
+                <div>
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div>
+                    <input type="text" placeholder="Message">
+                </div>
+            </section>
         </section>
         <section>
             <ul>
