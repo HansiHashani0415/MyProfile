@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#E20763">
+  <link rel="stylesheet" href="assests/css/Fonts/css/all.css">
+  <link href="assests/css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Indie+Flower&family=Lobster&family=Mochiy+Pop+P+One&family=Neuton&family=Orelega+One&family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,700;1,900&family=Roboto:wght@300;400&family=Source+Sans+Pro&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    body>section{
+      height: 100vh;
+      width: 100vw;
+    }
+    body > section > section:nth-child(1) {
+      width: 800px;
+      height: 40px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+    }
+
+    body > section > section:nth-child(1) > div {
+      flex-grow: 1;
+      align-items: center;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      margin: 10px;
+      font-weight: bold;
+      text-align: center;
+
+    }
+
+
+
+    body > section > section:nth-child(2) {
+      width: 1000px;
+      height: 300px;
+      position: absolute;
+      bottom: -222px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+    }
+    body > section > section:nth-child(3) {
+      width: 1000px;
+      height: 300px;
+      position: absolute;
+      bottom: 707px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      top: 397px;
+    }
+    body > section > section:nth-child(4) {
+      width: 1000px;
+      height: 300px;
+      position: absolute;
+      bottom: 110px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      top: 397px;
+    }
+    body > section > section:nth-child(5) {
+      width: 1000px;
+      height: 300px;
+      position: absolute;
+      bottom: -1079px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      top: 397px;
+    }
+    body > section > section:nth-child(4) > div {
+      flex-grow: 1;
+      border: 1px solid #2b2b2b;
+      margin: 20px;
+      position: relative;
+      box-shadow: 1px 1px 1px 1px grey;
+    }
+    body > section > section:nth-child(5) > div {
+      flex-grow: 1;
+      border: 1px solid #2b2b2b;
+      margin: 20px;
+      position: relative;
+      box-shadow: 1px 1px 1px 1px grey;
+    }
+
+    body > section > section:nth-child(4) > div > div {
+      width: 80px;
+      height: 22px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: auto;
+      border: 2px solid #E20763;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 3px;
+      padding-top: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    body > section > section:nth-child(5) > div > div {
+      width: 80px;
+      height: 22px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: auto;
+      border: 2px solid #E20763;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 3px;
+      padding-top: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    body > section > section:nth-child(2) > div {
+      flex-grow: 1;
+      border: 1px solid #2b2b2b;
+      margin: 20px;
+      position: relative;
+      box-shadow: 1px 1px 1px 1px grey;
+    }
+    body > section > section:nth-child(3) > div {
+      flex-grow: 1;
+      border: 1px solid #2b2b2b;
+      margin: 20px;
+      position: relative;
+      box-shadow: 1px 1px 1px 1px grey;
+    }
+    body > section > section:nth-child(5) > div {
+      flex-grow: 1;
+      border: 1px solid #2b2b2b;
+      margin: 20px;
+      position: relative;
+      box-shadow: 1px 1px 1px 1px grey;
+    }
+
+    body > section > section:nth-child(1) > div:hover {
+      font-weight: bold;
+      color: #E20763;
+      cursor: pointer;
+    }
+
+    body > section > section:nth-child(2) > div:hover {
+      background: none;
+      /* opacity: 0.5;*/
+      cursor: pointer;
+    }
+    body > section > section:nth-child(4) > div:hover {
+      cursor: pointer;
+    }
+    body > section > section:nth-child(3) > div:hover {
+      cursor: pointer;
+    }
+    body > section > section:nth-child(5) > div:hover {
+      cursor: pointer;
+    }
+    body > section > section:nth-child(2) > div > h3 {
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      margin: 20px;
+    }
+    body > section > section:nth-child(5) > div > h3 {
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    body > section > section:nth-child(2) > div > div {
+      width: 80px;
+      height: 22px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: auto;
+      border: 2px solid #E20763;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 3px;
+      padding-top: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    body > section > section:nth-child(3) > div > div {
+      width: 80px;
+      height: 22px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: auto;
+      border: 2px solid #E20763;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 3px;
+      padding-top: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    body > section > section:nth-child(2) > div:nth-child(1) {
+      background: url("assests/images/Screenshot 2022-01-13 083827.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(2) > div:nth-child(2) {
+      background: url("assests/images/Screenshot 2022-01-14 133807.jpg");
+      background-size: cover;
+    }
+
+    body > section > section:nth-child(2) > div:nth-child(3) {
+      background: url("assests/images/Screenshot 2022-01-14 133942.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(3) > div:nth-child(1) {
+      background: url("assests/images/Screenshot 2022-01-13 081530.jpg");
+      background-size: cover;
+
+    }
+    body > section > section:nth-child(3) > div:nth-child(2) {
+      background: url("assests/images/Screenshot 2022-01-13 081831.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(3) > div:nth-child(3) {
+      background: url("assests/images/Screenshot 2022-01-13 082045.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(4) > div:nth-child(1) {
+      background: url("assests/images/Screenshot 2022-01-13 083359.jpg");
+      background-size: cover;
+    }
+
+    body > section > section:nth-child(4) > div:nth-child(2) {
+      background: url("assests/images/Screenshot 2022-01-13 083537.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(4) > div:nth-child(3) {
+      background: url("assests/images/Screenshot 2022-01-13 083642.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(5) > div:nth-child(1) {
+      background: url("assests/images/Screenshot 2022-01-13 084923.jpg");
+      background-size: cover;
+    }
+    body > section > section:nth-child(5) > div:nth-child(2) {
+       background: url("assests/images/Screenshot 2021-12-27 204532.jpg");
+       background-size: cover;
+     }
+    body > section > section:nth-child(5) > div:nth-child(1) {
+      background: url("assests/images/Screenshot 2022-01-13 084923.jpg");
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <section>
+    <div>All</div>
+    <div>Stand Alone Applications</div>
+    <div>Mobile Applications</div>
+    <div>Web Applications</div>
+    <div>Assignments</div>
+  </section>
+  <section>
+    <div>
+      <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_3/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href="myprojects/CSS/Animations_And_Transitions/Case_4/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href="myprojects/CSS/Animations_And_Transitions/Case_5/index.html">View More</a></div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div><a href=" myprojects/CSS/Assignment_01/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href=" myprojects/CSS/Assignment_02/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href=" myprojects/CSS/Assignment_03/index.html">View More</a></div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div><a href=" myprojects/CSS/Assignment_04/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_1/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_2/index.html">View More</a></div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_6/index.html">View More</a></div>
+    </div>
+    <div>
+      <div><a href="https://github.com/HansiHashani0415/Student-Registration-System">View More</a></div>
+    </div>
+    <div>
+      <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_2/index.html">View More</a></div>
+    </div>
+  </section>
+</section>
+</body>
+</html>
