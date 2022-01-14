@@ -64,28 +64,29 @@
 
         body > main > section:nth-child(1) > section:nth-child(1) {
             position: absolute;
-            left: 0;
+            left: 3px;
             bottom: 0;
             margin: auto;
             color: white;
-            height: 200px;
-            font-size: 14px;
+            height: 170px;
+            font-size: 10px;
         }
 
         body > main > section:nth-child(1) > section:nth-child(1) > h3 {
             transform: rotate(90deg);
+
         }
 
         body > main > section:nth-child(1) > section:nth-child(1) > div {
             border-bottom: 1px solid white;
             margin: auto;
-            left: 60px;
+            left: 43px;
             bottom: 0px;
             position: absolute;
             z-index: 3;
             background-color: white;
             width: 1px;
-            height: 102px;
+            height: 101px;
         }
 
         body > main > section:nth-child(1) > section:nth-child(2) {
@@ -116,12 +117,15 @@
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(3) {
             font-size: 35px;
         }
+        body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(3)>span {
+            color: #E20763;
+            font-weight: bold;        }
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) {
             height: 40px;
             width: 100px;
             background-color: #E20763;
-            border-radius: 8px;
+            border-radius: 20px;
             color: white;
             position: relative;
         }
@@ -329,6 +333,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
+            width: 300px;
         }
 
         main > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) {
@@ -340,13 +345,33 @@
         main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) {
         }
 
-        main > section:nth-child(3) > section:nth-child(2) > section > h3 {
+        main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > h3 {
             font-size: 24px;
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
             color: white;
             text-align: center;
             margin-top: 10px;
+            width: 280px;
+        }
+        main > section:nth-child(3) > section:nth-child(2) > section:nth-child(2) > h3 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            width: 503px;
+        }
+
+        main > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > h3 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            width: 737px;
         }
 
         main > section:nth-child(3) > section:nth-child(2) > section > div {
@@ -479,7 +504,7 @@
 
         main > section:nth-child(5) {
             width: 100vw;
-            height: 150vh;
+            height: 180vh;
             background: url(assests/images/aboutPage.jpg);
             background-size: cover;
             background-color: #2b2b2b;
@@ -489,7 +514,7 @@
         main > section:nth-child(5) > section {
             position: absolute;
             width: 1170px;
-            height: 952px;
+            height: 1212px;
             left: 0;
             bottom: 0;
             right: 0;
@@ -594,6 +619,28 @@
             position: relative;
             box-shadow: 1px 1px 1px 1px grey;
         }
+        /*main > section:nth-child(5) > section > section:nth-child(5) > div:hover{
+            display: none;
+            position: absolute;
+            !*left: 5px;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;*!
+            background: rgba(0,0,0,.8);
+            -webkit-transition: opacity .6s;
+            -o-transition: opacity .6s;
+            transition: opacity .6s;
+            color: #fff;
+            border-radius: 8px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+        }*/
         main > section:nth-child(5) > section > section:nth-child(6) > div {
             flex-grow: 1;
             border: 1px solid red;
@@ -868,8 +915,12 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            width: 85%;
+            /* width: 100%; */
             margin: auto;
+            top: 28px;
+            bottom: 0;
+            left: -213px;
+            right: 0;
         }
 
         body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) {
@@ -905,8 +956,8 @@
 
         body > main > section:nth-child(4) > section:nth-child(2) > section > section > p {
             position: absolute;
-            font-size: 18px;
-            top: 12px;
+            font-size: 17px;
+            top: 0px;
             left: 92px;
             margin: auto;
             border: 2px solid #e20763;
@@ -915,8 +966,9 @@
             /* align-items: center; */
             padding-top: 8px;
             border-radius: 6px;
-            box-shadow: 10px 10px 1px 0px #e20763;
+            box-shadow: 3px 3px 4px 0px #e20763;
         }
+
 
         body > main > section:nth-child(4) > section:nth-child(2) > section > section > section {
             position: absolute;
@@ -1226,8 +1278,7 @@
             main > section:nth-child(5) > section {
                 position: absolute;
                 width: 1170px;
-                height: 804px;
-                left: 0;
+                height: 1226px;                left: 0;
                 bottom: 0;
                 right: 0;
                 top: 20px;
@@ -1253,6 +1304,28 @@
             }
 
             main > section:nth-child(5) > section > section:nth-child(5) {
+                width: 314px;
+                height: 560px;
+                position: absolute;
+                bottom: 52px;
+                left: 0;
+                right: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            main > section:nth-child(5) > section > section:nth-child(6) {
+                width: 314px;
+                height: 560px;
+                position: absolute;
+                bottom: 52px;
+                left: 0;
+                right: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            main > section:nth-child(5) > section > section:nth-child(7) {
                 width: 314px;
                 height: 560px;
                 position: absolute;
@@ -1548,6 +1621,17 @@
                     <div><a href=" myprojects/CSS/Assignment_03/index.html">View More</a></div>
                 </div>
             </section>
+            <section>
+                <div>
+                    <div><a href=" myprojects/CSS/Assignment_01/index.html">View More</a></div>
+                </div>
+                <div>
+                    <div><a href=" myprojects/CSS/Assignment_02/index.html">View More</a></div>
+                </div>
+                <div>
+                    <div><a href=" myprojects/CSS/Assignment_03/index.html">View More</a></div>
+                </div>
+            </section>
         </section>
     </section>
     <!--Contact Page-->
@@ -1588,7 +1672,6 @@
             </ul>
         </section>
     </section>
-
 </main>
 <footer>
     <!--
