@@ -28,7 +28,7 @@
 
 [MyWebsite URL](https://hansihashani0415.github.io/MyProfile/)
 
-[Webhost URL](https://hansihashani.000webhostapp.com/)
+[000Webhost URL](https://hansihashani.000webhostapp.com/)
 
 ### Screenshots of my website
 
