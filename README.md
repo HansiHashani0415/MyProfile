@@ -1,6 +1,10 @@
 # This is My Profile
 
-#### This is my very first web design.
+### This is my very first web design.
+
+### Technologies used
+- Html
+- CSS
 
 [SiteMap URL](https://www.gloomaps.com/gNTVKlkgKw)
 
