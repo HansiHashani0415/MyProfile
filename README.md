@@ -1,5 +1,18 @@
-# This is My Profile
+<div id="top"></div>
 
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![FaceBook][faceBook-shield]][faceBook-url]
+[![WhatsApp][whatsApp-shield]][whatsApp-url]
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/hansi-hashani-8a2540203
+
+[faceBook-shield]: https://img.shields.io/badge/Facebook-3498db?style=for-the-badge&logo=facebook&logoColor=white
+[faceBook-url]: https://www.facebook.com/hansi.hashani.75
+
+[whatsApp-shield]: https://img.shields.io/badge/WhatsApp-2ecc71?style=for-the-badge&logo=whatsapp&logoColor=white
+[whatsApp-url]: https://web.whatsapp.com/
+# This is My Profile
 ### This is my very first web design.
 
 ### Technologies used
@@ -19,14 +32,15 @@
 ### Screenshots of my website
 
 #### Home Page
-![App Screenshot](assests/images/home.jpg)
+![Screenshot](assests/images/home.jpg)
 #### About Page
-![App Screenshot](assests/images/about.jpg)
+![Screenshot](assests/images/about.jpg)
 #### Skills Page
-![App Screenshot](assests/images/skills.jpg)
+![Screenshot](assests/images/skills.jpg)
 #### Education Page
-![App Screenshot](assests/images/education.jpg)
+![Screenshot](assests/images/education.jpg)
 #### Projects Page
-![App Screenshot](assests/images/projects.jpg)
+![Screenshot](assests/images/projects.jpg)
 #### Contact Page
-![App Screenshot](assests/images/contact.jpg)
+![Screenshot](assests/images/contact.jpg)
+
