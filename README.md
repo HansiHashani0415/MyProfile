@@ -16,4 +16,17 @@
 
 [Webhost URL](https://hansihashani.000webhostapp.com/)
 
-![App Screenshot](assests/images/Screenshot1.jpg)
+### Screenshots of my website
+
+#### Home Page
+![App Screenshot](assests/images/home.jpg)
+#### About Page
+![App Screenshot](assests/images/about.jpg)
+#### Skills Page
+![App Screenshot](assests/images/skills.jpg)
+#### Education Page
+![App Screenshot](assests/images/education.jpg)
+#### Projects Page
+![App Screenshot](assests/images/projects.jpg)
+#### Contact Page
+![App Screenshot](assests/images/contact.jpg)
