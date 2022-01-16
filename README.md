@@ -2,7 +2,6 @@
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![FaceBook][faceBook-shield]][faceBook-url]
-[![WhatsApp][whatsApp-shield]][whatsApp-url]
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hansi-hashani-8a2540203
@@ -10,8 +9,6 @@
 [faceBook-shield]: https://img.shields.io/badge/Facebook-3498db?style=for-the-badge&logo=facebook&logoColor=white
 [faceBook-url]: https://www.facebook.com/hansi.hashani.75
 
-[whatsApp-shield]: https://img.shields.io/badge/WhatsApp-2ecc71?style=for-the-badge&logo=whatsapp&logoColor=white
-[whatsApp-url]: https://web.whatsapp.com/
 # This is My Profile
 ### This is my very first web design.
 
