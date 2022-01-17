@@ -14,6 +14,43 @@
 
 
     <style>
+
+        .screenshot:hover{
+            outline: 5px solid #E20763;
+            transform: scale(1.02) translateY(-10px);
+        }
+
+
+        body>main{
+            position: relative;
+        }
+
+        #homePage{
+            position: relative;
+        }
+
+        #background {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: url("assests/images/aboutPage.jpg");
+            background-size: cover;
+            top: 0;
+            margin: auto;
+            z-index: -3;
+        }
+
+
+        header>ul>li>a{
+            color: white;
+            text-decoration: none;
+        }
+        header>ul>li>a:hover{
+            cursor: pointer;
+            font-weight: bold;
+            color: #E20763;
+        }
+
         main {
             overflow: hidden;
         }
@@ -22,9 +59,8 @@
             width: 100vw;
             height: 70px;
             position: fixed;
-            background-color: #2b2b2b;
+            background-color: rgba(43, 43, 43, 0.65);
             color: white;
-            opacity: 0.8;
             z-index: 2;
         }
 
@@ -176,20 +212,29 @@
         main > section:nth-child(2) {
             width: 100vw;
             height: 100vh;
-            background: url("assests/images/aboutPage.jpg");
+            /*background: url("assests/images/aboutPage.jpg");*/
             background-size: cover;
-            background-color: #2b2b2b;
+            /*background-color: #2b2b2b;*/
             filter: contrast(80%);
         }
 
-        main > section:nth-child(2) > section:nth-child(2) {
-            position: absolute;
+        main > section:nth-child(2) > section:nth-child(1){
             height: 760px;
+            position: absolute;
             width: 440px;
             left: 100px;
             margin: auto;
             background: url("assests/images/Screenshot 2022-01-12 151512.jpg");
             background-size: cover;
+        }
+
+        main > section:nth-child(2) > section:nth-child(1)>div {
+           /* position: absolute;
+            width: 440px;
+            left: 100px;
+            margin: auto;
+            background: url("assests/images/image.png");
+            background-size: cover;*/
         }
 
         main > section:nth-child(2) > section:nth-child(2) > div:nth-child(1) {
@@ -216,7 +261,7 @@
 
         }
 
-        main > section:nth-child(2) > section:nth-child(3) {
+        main > section:nth-child(2) > section:nth-child(2) {
             color: white;
             position: absolute;
             right: 70px;
@@ -229,7 +274,7 @@
             padding: 30px;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > h3:nth-child(1) {
+        main > section:nth-child(2) > section:nth-child(2) > h3:nth-child(1) {
             font-size: 24px;
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
@@ -237,19 +282,19 @@
             margin: 0;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > h2 {
+        main > section:nth-child(2) > section:nth-child(2) > h2 {
             font-size: 36px;
             font-weight: bold;
             font-family: 'Roboto', sans-serif;
             margin: 0;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > p {
+        main > section:nth-child(2) > section:nth-child(2) > p {
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > section {
+        main > section:nth-child(2) > section:nth-child(2) > section {
             font-size: 20px;
             height: 200px;
             width: 630px;
@@ -258,7 +303,7 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > div {
+        main > section:nth-child(2) > section:nth-child(2) > div {
             top: 30px;
             height: 50px;
             width: 178px;
@@ -269,11 +314,11 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > div:hover {
+        main > section:nth-child(2) > section:nth-child(2) > div:hover {
             cursor: pointer;
         }
 
-        main > section:nth-child(2) > section:nth-child(3) > div > h3 {
+        main > section:nth-child(2) > section:nth-child(2) > div > h3 {
             font-size: 20px;
             position: absolute;
             top: 0;
@@ -288,9 +333,9 @@
         main > section:nth-child(3) {
             width: 100vw;
             height: 100vh;
-            background: url("assests/images/aboutPage.jpg");
+            /*background: url("assests/images/aboutPage.jpg");*/
             background-size: cover;
-            background-color: #2b2b2b;
+            /*background-color: #2b2b2b;*/
             filter: contrast(80%);
         }
 
@@ -499,18 +544,18 @@
         main > section:nth-child(4) {
             width: 100vw;
             height: 100vh;
-            background: url("assests/images/aboutPage.jpg");
+            /*background: url("assests/images/aboutPage.jpg");*/
             background-size: cover;
-            background-color: #2b2b2b;
+            /*background-color: #2b2b2b;*/
             filter: contrast(80%);
         }
 
         main > section:nth-child(5) {
             width: 100vw;
             height: 180vh;
-            background: url(assests/images/aboutPage.jpg);
+            /*background: url(assests/images/aboutPage.jpg);*/
             background-size: cover;
-            background-color: #2b2b2b;
+            /*background-color: #2b2b2b;*/
             filter: contrast(80%);
         }
 
@@ -3522,17 +3567,17 @@
 <header>
     <h2>Hansi Hashani</h2>
     <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>EDUCATION</li>
-        <li>PORTFOLIO</li>
-        <li>CONTACT</li>
+        <li><a href="#homePage">HOME</a></li>
+        <li><a href="#aboutPage">ABOUT</a></li>
+        <li><a href="#skillsPage">SKILLS</a></li>
+        <li><a href="#eduPage">EDUCATION</a></li>
+        <li><a href="#proPage">PORTFOLIO</a></li>
+        <li><a href="#contactPage">CONTACT</a></li>
     </ul>
 </header>
 <main>
     <!--Home Page-->
-    <section>
+    <section id="homePage">
         <section>
             <h3>SCROLLDOWN</h3>
             <div></div>
@@ -3541,7 +3586,7 @@
             <div>
                 <p>Hello, I'm</p>
                 <p> HANSI HASHANI</p>
-                <p> And I'm a <span style="color: #E20763">Software Engineer</span></p>
+                <p> And I'm a <span>Software Engineer</span> </p>
             </div>
             <div>
                 <h3>Hire Me</h3>
@@ -3561,10 +3606,8 @@
         </section>
     </section>
     <!--About Page-->
-    <section>
-        <section></section>
+    <section id="aboutPage">
         <section>
-            <div></div>
             <div></div>
         </section>
         <section>
@@ -3580,7 +3623,7 @@
         </section>
     </section>
     <!--Skills Page-->
-    <section>
+    <section id="skillsPage">
         <section>
             <section></section>
             <section>
@@ -3591,7 +3634,7 @@
         <section>
             <section>
                 <h3>Languages</h3>
-                <div>
+                <div class="screenshot">
                     <div>
                         <ul>
                             <li><</li>
@@ -3611,7 +3654,7 @@
             </section>
             <section>
                 <h3>Tools</h3>
-                <div>
+                <div class="screenshot">
                     <div>
                         <ul>
                             <li><</li>
@@ -3630,7 +3673,7 @@
             </section>
             <section>
                 <h3>Frameworks</h3>
-                <div>
+                <div class="screenshot">
                     <div>
                         <ul>
                             <li><</li>
@@ -3643,7 +3686,7 @@
         </section>
     </section>
     <!--Education Page-->
-    <section>
+    <section id="eduPage">
         <section>
             <h3>I'm qualified with</h3>
             <h2>Education</h2>
@@ -3670,7 +3713,7 @@
         </section>
     </section>
     <!--Projects Page-->
-    <section>
+    <section id="proPage">
         <section>
             <h2>Projects</h2>
             <h3>I've done</h3>
@@ -3685,37 +3728,37 @@
                 <div>Assignments</div>
             </section>
             <section>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_3/index.html">View More</a></div>
                 </div>
-                <div>
+                <div class="screenshot">
                     <div><a href="myprojects/CSS/Animations_And_Transitions/Case_4/index.html">View More</a></div>
                 </div>
-                <div>
+                <div class="screenshot">
                     <div><a href="myprojects/CSS/Animations_And_Transitions/Case_5/index.html">View More</a></div>
                 </div>
             </section>
             <section>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Assignment_01/index.html">View More</a></div>
                 </div>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Assignment_02/index.html">View More</a></div>
                 </div>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Assignment_03/index.html">View More</a></div>
                 </div>
             </section>
             <section>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Assignment_04/index.html">View More</a></div>
 
 
                 </div>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_1/index.html">View More</a></div>
                 </div>
-                <div>
+                <div class="screenshot">
                     <div><a href=" myprojects/CSS/Animations_And_Transitions/Case_2/index.html">View More</a></div>
                 </div>
             </section>
@@ -3723,7 +3766,7 @@
         </section>
     </section>
     <!--Contact Page-->
-    <section>
+    <section id="contactPage">
         <section>
             <h3>Got a Problem?</h3>
             <h3>Feel free to</h3>
@@ -3760,6 +3803,7 @@
             </ul>
         </section>
     </section>
+    <section id="background"></section>
 </main>
 <footer>
     <!--
