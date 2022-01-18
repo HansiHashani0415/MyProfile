@@ -20,8 +20,6 @@
 #### Languages
 - Html
 - CSS
-#### Frameworks
-- Bootstrap
 
 [SiteMap URL](https://www.gloomaps.com/gNTVKlkgKw)
 
