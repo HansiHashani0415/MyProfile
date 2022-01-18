@@ -17,8 +17,11 @@
 ### This is my very first web design.
 
 ### Technologies used
+#### Languages
 - Html
 - CSS
+#### Frameworks
+- Bootstrap
 
 [SiteMap URL](https://www.gloomaps.com/gNTVKlkgKw)
 
