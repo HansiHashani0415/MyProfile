@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>WHOLEFOODS POS System</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <meta name="keywords" content="Uresha">
+  <meta name="description" content="Uresha POS System">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3498db">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/Fonts/css/all.css">
+  <style>
+    #invoiceFormHeader, #itemFormHeader, #purchaseBtn, #addBtn{
+      background:#2ecc71;
+    }
+    .nav-item:hover{
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light shadow "style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="assets/images/logo.png" alt="" width="40" height="30" class="d-inline-block align-text-top fw-bolder">
+        WHOLEFOODS POS System
+      </a>
+      <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link text-primary" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-primary " href="manageCustomer.html">Customers</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-primary" href="manageStore.html">Items</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-primary" href="placeOrder.html">Purchase Order</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-primary" href="orderDetail.html">Orders</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-sm btn-outline-primary me-2" type="button">Sign Up</button>
+          <button class="btn btn-sm btn-outline-danger me-3" type="button"><a href="index.html" class="text-decoration-none text-danger">Log Out</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</section>
+<section class="container-fluid">
+  <section class="row pe-4 ps-4">
+    <h4 class="shadow"><i class="fas fa-shopping-cart p-2"></i>Order Details</h4>
+    <table class="table table-borderless rounded table-hover mt-3 ">
+        <thead id="tHead" class="text-white bg-primary ">
+        <tr>
+          <th>Order ID</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Customer ID</th>
+          <th>No Of Items</th>
+          <th>SubTotal</th>
+          <th>Discount</th>
+          <th>Discount Price</th>
+          <th>Total Amount</th>
+          <th>Option</th>
+        </tr>
+        </thead>
+        <tbody class="table-primary">
+        <tr class="table-hover fw-light">
+          <th>O-0001</th>
+          <th>22-01-2022</th>
+          <th>11:58</th>
+          <th>C001</th>
+          <th>2</th>
+          <th>1000.00</th>
+          <th>10</th>
+          <th>100.00</th>
+          <th>900.00</th>
+          <th>
+            <div>
+              <button  type="submit" class="btn btn-sm btn-success text-white  ">View Details</button>
+              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+            </div>
+          </th>
+        </tr>
+        <tr class="table-hover fw-light">
+          <th>O-0001</th>
+          <th>22-01-2022</th>
+          <th>11:58</th>
+          <th>C001</th>
+          <th>2</th>
+          <th>1000.00</th>
+          <th>10</th>
+          <th>100.00</th>
+          <th>900.00</th>
+          <th>
+            <div>
+              <button  type="submit" class="btn btn-sm btn-success text-white  ">View Details</button>
+              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+            </div>
+          </th>
+        </tr>
+        </tbody>
+      </table>
+    <h4>Order ID : O-0001</h4>
+    <section class="container-fluid">
+      <section class="row">
+      <div class="col-3 shadow-lg  bg-body border rounded  border-2 me-4 mt-3 p-3 ">
+      <form class="row g-3">
+        <div id="invoiceFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded ">Customer Details</div>
+        <div class="col-md-12">
+          <label for="inputOrderID" class="form-label">Customer ID :</label>
+          <input type="email" class="form-control" id="inputOrderID">
+        </div>
+        <div class="col-md-12">
+          <label for="inputDate" class="form-label">Name :</label>
+          <input type="password" class="form-control" id="inputDate" >
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address :</label>
+          <input type="text" class="form-control" id="inputAddress" >
+        </div>
+        <div class="col-12">
+          <label for="inputCustomerID" class="form-label">Telephone :</label>
+          <input type="text" class="form-control" id="inputCustomerID">
+        </div>
+      </form>
+
+    </div>
+
+        <div class="col shadow-lg">
+          <table class=" table table-striped table-borderless rounded table-hover mt-3 ">
+            <thead  class="">
+            <tr>
+              <th>Item Code</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+              <th>Qty</th>
+              <th>Total Price</th>
+            </tr>
+            </thead>
+            <tbody class="">
+            <tr class="table-hover fw-light">
+              <th>I001</th>
+              <th>Rice</th>
+              <th>150.00</th>
+              <th>2</th>
+              <th>300.00</th>
+            </tr>
+            <tr class="table-hover fw-light">
+              <th>I001</th>
+              <th>Rice</th>
+              <th>150.00</th>
+              <th>2</th>
+              <th>300.00</th>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </section>
+</section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

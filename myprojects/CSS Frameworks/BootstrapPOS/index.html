@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>WHOLEFOODS POS System</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <meta name="keywords" content="Uresha">
+  <meta name="description" content="Uresha POS System">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3498db">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/Fonts/css/all.css">
+  <style>
+    #logIn{
+      height: 400px;
+      width: 300px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    #btn{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      margin: auto;
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light shadow " style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="assets/images/logo.png" alt="" width="40" height="30" class="d-inline-block align-text-top fw-bolder">
+        WHOLEFOODS POS System
+      </a>
+      <form class="d-flex">
+        <button class="btn btn-sm btn-outline-primary me-2" type="button">Sign Up</button>
+      </form>
+    </div>
+  </nav>
+</section>
+<section id="logIn" class="border border-primary border rounded-3 p-3 shadow-lg">
+  <form>
+    <div>
+      <h3 class="text-center fw-bold text-primary">Sign In</h3>
+    </div>
+    <div class="mb-3 mt-5">
+      <label for="exampleInputEmail1" class="form-label">Username</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button id="btn" type="submit" class=" btn btn-primary"><a href="dashboard.html" class="text-decoration-none text-white ">Log In</a></button>
+  </form>
+</section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

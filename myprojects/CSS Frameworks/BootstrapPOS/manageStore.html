@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WHOLEFOODS POS System</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta name="keywords" content="Uresha">
+    <meta name="description" content="Uresha POS System">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3498db">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Fonts/css/all.css">
+    <style>
+        #searchFormHeader{
+            background: #2ecc71;
+            height: 55px;
+        }
+        #tHead{
+            background: #3498db;
+        }
+        .nav-item:hover{
+            font-weight: bolder;
+        }
+        #purchaseBtn{
+            background:#2ecc71;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow ">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="assets/images/logo.png" alt="" width="40" height="30" class="d-inline-block align-text-top fw-bolder">
+                WHOLEFOODS POS System
+            </a>
+            <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item  ">
+                        <a class="nav-link text-primary" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary " href="manageCustomer.html">Customers</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary " href="manageStore.html">Items</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary" href="placeOrder.html">Purchase Order</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary" href="orderDetail.html">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-sm btn-outline-primary me-2" type="button">Sign Up</button>
+                    <button class="btn btn-sm btn-outline-danger me-3" type="button"><a href="index.html" class="text-decoration-none text-danger">Log Out</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="container-fluid pe-5 ps-5">
+    <section class="row pe-4 ps-4 ">
+        <h4 class="shadow"><i class="fas fa-cubes p-2"></i>Item</h4>
+        <div class="col-4 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 p-3 ">
+            <form class="row g-3">
+                <div id="searchFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded">Search Item</div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" id="inputNameNICTp" placeholder="Input Item Code/ Description here">
+                </div>
+                <div class="col-2 me-3" >
+                    <button id="purchaseBtn" class="btn btn me-2 text-white fw-bolder" type="button">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-2">
+            <button type="button" class="col-12 btn btn btn-primary fw-bolder mt-4 shadow-lg" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Add New Item
+            </button>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="exampleModalLabel1">Add New Item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3">
+                                <div class="col-md-12">
+                                    <label for="inputID" class="form-label">Item Code :</label>
+                                    <input type="password" class="form-control" id="inputID" placeholder="I001">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputName" class="form-label">Description :</label>
+                                    <input type="email" class="form-control" id="inputName" placeholder="Rice">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Unit Price :</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="150.00">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputTelephone" class="form-label">Qty On Hand :</label>
+                                    <input type="text" class="form-control" id="inputTelephone" placeholder="300.00">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="col-2 btn btn-danger " data-bs-dismiss="modal">Clear</button>
+                            <button type="button" class="col-3 btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-borderless table-hover m-0">
+            <thead id="tHead" class="text-white bg-primary">
+            <tr>
+                <th>Item Code</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>Qty On Hand</th>
+                <th>Option</th>
+            </tr>
+            </thead>
+            <tbody class="table-primary">
+            <tr class="table-hover fw-light">
+                <th>I001</th>
+                <th>Rice</th>
+                <th>150.00</th>
+                <th>200</th>
+                <th>
+                    <div>
+                        <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+                        <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+                    </div>
+                </th>
+            </tr>
+            <tr class="table-hover fw-light">
+                <th>I001</th>
+                <th>Rice</th>
+                <th>150.00</th>
+                <th>200</th>
+                <th>
+                    <div>
+                        <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+                        <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+                    </div>
+                </th>
+            </tr>
+            <tr class="table-hover fw-light">
+                <th>I001</th>
+                <th>Rice</th>
+                <th>150.00</th>
+                <th>200</th>
+                <th>
+                    <div>
+                        <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+                        <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+                    </div>
+                </th>
+            </tr>
+            <tr class="table-hover fw-light">
+                <th>I001</th>
+                <th>Rice</th>
+                <th>150.00</th>
+                <th>200</th>
+                <th>
+                    <div>
+                        <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+                        <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+                    </div>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
