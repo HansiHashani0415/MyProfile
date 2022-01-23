@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
   <title>WHOLEFOODS POS System</title>
   <link rel="icon" href="assets/images/logo.png">
-  <meta name="keywords" content="Uresha">
-  <meta name="description" content="Uresha POS System">
+  <meta name="keywords" content="wholefoods">
+  <meta name="description" content="WHOLEFOODS POS System">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3498db">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -40,7 +40,43 @@
         WHOLEFOODS POS System
       </a>
       <form class="d-flex">
-        <button class="btn btn-sm btn-outline-primary me-2" type="button">Sign Up</button>
+          <button type="button" class="col-12 btn btn-sm btn-primary shadow-lg" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            Sign Up
+          </button>
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-primary" id="exampleModalLabel1">Sign Up</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-md-12">
+                      <label for="inputID" class="form-label">User ID :</label>
+                      <input type="password" class="form-control" id="inputID" placeholder="U001">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputName" class="form-label">Usename :</label>
+                      <input type="email" class="form-control" id="inputName" placeholder="Hansi">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">E-mail :</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="hansi@gmail.com">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputTelephone" class="form-label">Password :</label>
+                      <input type="text" class="form-control" id="inputTelephone" placeholder="****">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="col-2 btn btn-danger " data-bs-dismiss="modal">Clear</button>
+                  <button type="button" class="col-3 btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </form>
     </div>
   </nav>
