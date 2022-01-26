@@ -38,7 +38,7 @@
 #### About Page
 ![Screenshot](assests/images/about.jpg)
 #### Skills Page
-![Screenshot](assests/images/skills.jpg)
+![Screenshot](assests/images/akills.jpg)
 #### Education Page
 ![Screenshot](assests/images/education.jpg)
 #### Projects Page
