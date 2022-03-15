@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+
+    <style>
+
+        body {
+            background-color: #3a483b;
+        }
+
+        body > section {
+            width: 98vw;
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body > section > section {
+            display: flex;
+            width: 600px;
+            flex-direction: column;
+        }
+
+        body > section > section > section {
+            display: flex;
+            height: 40px;
+            padding: 10px;
+        }
+
+        body > section > section > section:nth-child(2) {
+            justify-content: center;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+
+        body > section > section > section:nth-child(2) > div {
+            margin-right: 10px;
+        }
+
+        body > section > section > section:nth-child(3) {
+            justify-content: flex-end;
+        }
+
+        div {
+            width: 80px;
+        }
+
+        body > section > section > section:nth-child(1) > div {
+            background-color: red;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(1) {
+            background-color: green;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) {
+            background-color: blue;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(3) {
+            background-color: yellow;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(4) {
+            background-color: pink;
+        }
+
+        body > section > section > section:nth-child(3) > div {
+            background-color: hotpink;
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+
+    <section>
+
+        <section>
+
+            <div id="box1"></div>
+
+        </section>
+
+        <section>
+
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+            <div id="box5"></div>
+
+        </section>
+
+        <section>
+
+            <div id="box6"></div>
+
+        </section>
+
+    </section>
+
+</section>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    var colors = ['red','green','blue','yellow','pink','hotpink'];
+
+    var boxes = [$('#box1'),$('#box2'),$('#box3'),$('#box4'),$('#box5'),$('#box6')];
+
+    function changeColor() {
+
+        let col = colors.pop();
+        colors.unshift(col);
+
+        for (var i in boxes) {
+            boxes[i].css("background",colors[i]);
+        }
+    }
+
+    setInterval(changeColor,400);
+
+</script>
+</body>
+</html>

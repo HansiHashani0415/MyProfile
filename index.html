@@ -15,6 +15,19 @@
 
 
     <style>
+
+        #myname,#address,#contact,#email {
+            left: 23px;
+            top: 13px;
+            position: relative;
+
+        }
+        .viewMore{
+            text-decoration: none;
+            color: #E20763;
+            font-weight: bold;
+        }
+
         .screenshot:hover{
             outline: 5px solid #E20763;
             transform: scale(1.02) translateY(-5px);
@@ -34,6 +47,7 @@
             width: 100vw;
             height: 100vh;
             background: url("assests/images/aboutPage.jpg");
+            filter: contrast(101%);
             background-size: cover;
             top: 0;
             margin: auto;
@@ -133,6 +147,8 @@
             font-family: 'Roboto', sans-serif;
         }
 
+
+
         body > main > section:nth-child(1) > section:nth-child(2) > div > p {
             margin: 10px;
         }
@@ -143,17 +159,39 @@
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
             font-size: 35px;
+            animation-name: pAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
             font-size: 48px;
             font-weight: bold;
+            animation-name: animateText;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
 
+        /*@keyframes animateText {
+            0%,20%{font-size: 44px;}
+            25%,35%{font-size: 45px;}
+            50%,65%{font-size: 46px;}
+            75%,85%{font-size: 47px;}
+            100%{font-size: 48px;}
+        }*/
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(3) {
             font-size: 35px;
+            animation-name: pAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
-
+        /*@keyframes pAnimation {
+            0%,20%{font-size: 31px;}
+            25%,35%{font-size: 32px;}
+            50%,65%{font-size: 33px;}
+            75%,85%{font-size: 34px;}
+            100%{font-size: 35px;}
+        }*/
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(3) > span {
             color: #E20763;
             font-weight: bold;
@@ -298,7 +336,7 @@
         }
 
         main > section:nth-child(2) > section:nth-child(2) > section {
-            font-size: 20px;
+            font-size: 18px;
             height: 200px;
             width: 630px;
             border: 2px solid #E20763;
@@ -823,23 +861,24 @@
 
         main > section:nth-child(5) > section > div > a {
             text-decoration: none;
-            color: black;
+            color: #E20763;
+            font-weight: bold;
             margin: 0;
             text-align: center;
         }
 
         main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(1) {
-            background: url("assests/images/animationsCase1.jpg");
+            background: url("assests/images/knight.jpg");
             background-size: cover;
         }
 
         main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(2) {
-            background: url("assests/images/animationsCase2.jpg");
+            background: url("assests/images/que.jpg");
             background-size: cover;
         }
 
         main > section:nth-child(5) > section > section:nth-child(5) > div:nth-child(3) {
-            background: url("assests/images/animationsCase3.jpg");
+            background: url("assests/images/SPA.jpg");
             background-size: cover;
         }
 
@@ -3589,7 +3628,7 @@
             <div>
                 <p>Hello, I'm</p>
                 <p> HANSI HASHANI</p>
-                <p> And I'm a <span>Software Engineer</span> </p>
+                <p> And I'm a <span id="timer">Software Engineer</span> </p>
             </div>
             <div>
                 <h3><a href="#contactPage">Hire Me</a></h3>
@@ -3619,7 +3658,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci assumenda atque consequuntur
                 cupiditate delectus et illo incidunt minima molestiae nam numquam possimus quasi quo rem soluta totam,
                 voluptatem voluptatum?</p>
-            <section></section>
+            <section>
+                <p id="myname">Name : V. W. Hansi Hashani</p>
+                <p id="address">Address : Matara, Kamburugamuwa</p>
+                <p id="email">E-mail : hansihashani824@gmail.com</p>
+                <p id="contact">Contact : +96 71 175 7824</p>
+            </section>
             <div>
                 <h3>Download CV</h3>
             </div>
@@ -3730,40 +3774,51 @@
                 <div>Web Applications</div>
                 <div>Assignments</div>
             </section>
+            <!--<section>
+                <div class="screenshot">
+                    <div><a class="viewMore" href="myprojects/CSS/Animations/Case_1/index.html">View More</a></div>
+                </div>
+                <div class="screenshot">
+                    <div><a class="viewMore" href="myprojects/CSS/Animations/Case_2/index.html">View More</a></div>
+                </div>
+                <div class="screenshot">
+                    <div><a class="viewMore" href="myprojects/CSS/Animations/Case_3/index.html">View More</a></div>
+                </div>
+            </section>-->
             <section>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Animations/Case_1/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/JS/Kitt/index.html">View More</a></div>
                 </div>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Animations/Case_2/index.html">View More</a></div>
+                    <div><a class="viewMore" href=" myprojects/JS/Que/index.html">View More</a></div>
                 </div>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Animations/Case_3/index.html">View More</a></div>
+                    <div><a class="viewMore" href=" myprojects/JS/SPA/index.html">View More</a></div>
                 </div>
             </section>
             <section>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Layouts/Case_1/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/CSS/Layouts/Case_1/index.html">View More</a></div>
                 </div>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Layouts/Case_2/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/CSS/Layouts/Case_2/index.html">View More</a></div>
                 </div>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Layouts/Case_3/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/CSS/Layouts/Case_3/index.html">View More</a></div>
                 </div>
             </section>
             <section>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Layouts/Case_4/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/CSS/Layouts/Case_4/index.html">View More</a></div>
                 </div>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Transitions/Case_1/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/CSS/Transitions/Case_1/index.html">View More</a></div>
                 </div>
                 <div class="screenshot">
-                    <div><a href="myprojects/CSS/Transitions/Case_2/index.html">View More</a></div>
+                    <div><a class="viewMore" href="myprojects/CSS/Transitions/Case_2/index.html">View More</a></div>
                 </div>
             </section>
-            <div><a href="index_1.html">View More</a></div>
+            <div><a class="viewMore" href="index_1.html">View More</a></div>
         </section>
     </section>
     <!--Contact Page-->
@@ -3811,6 +3866,21 @@
         <p>Copyright 2022 | All rights reserved. Designed and Developed by Hansi Hashani.</p>
     -->
 </footer>
+<script src="myprojects/JS/SPA/assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
 
+    let animationText = $("#timer").text();
+    var count = 0;
+    function animate() {
+        let outPut= animationText.substr(0,count+1);
+        $("#timer").text(outPut);
+        count++;
+        if (count==animationText.length){
+            count=0;
+        }
+    }
+    setInterval(animate,100);
+
+</script>
 </body>
 </html>
