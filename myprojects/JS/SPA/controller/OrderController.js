@@ -18,7 +18,7 @@ $("#btnAddToCart").click(function () {
         addCart(newItemToCart);
         loadCartAll();
 
-        $("#txtOrderQty").css('border', '2px solid #ced4da');
+        $("#txtOrderQty").css('border', '2px solid green');
         clearOrderItem();
     } else {
         $("#txtOrderQty").css('border', '2px solid red');
@@ -37,17 +37,17 @@ const regExDiscount = /^[0-9]{1,}$/;
 
 function formValidOrder() {
     var orderID = $("#txtOrderID").val();
-    $("#txtOrderID").css('border', '2px solid #ced4da');
+    $("#txtOrderID").css('border', '2px solid green');
     if (regExOrderID.test(orderID)) {
         var cash = $("#txtCash").val();
         if (regExUnitPrice.test(cash)){
-            $("#txtCash").css('border', '2px solid #ced4da');
+            $("#txtCash").css('border', '2px solid green');
             var discount = $("#txtDiscount").val();
             if (regExDiscount.test(discount)){
-                $("#txtDiscount").css('border', '2px solid #ced4da');
+                $("#txtDiscount").css('border', '2px solid green');
                 var balance = $("#txtBalance").val();
                 if (regExDiscount.test(balance)){
-                    $("#txtBalance").css('border', '2px solid #ced4da');
+                    $("#txtBalance").css('border', '2px solid green');
                     $("#btnSaveItem").attr('disabled', false);
                     return true;
                 }else{
