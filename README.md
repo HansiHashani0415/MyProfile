@@ -36,11 +36,11 @@
 #### Home Page
 ![Screenshot](assests/images/home.jpg)
 #### About Page
-![Screenshot](assests/images/about.jpg)
+![Screenshot](assests/images/about.png)
 #### Skills Page
 ![Screenshot](assests/images/akills.jpg)
 #### Education Page
-![Screenshot](assests/images/education.jpg)
+![Screenshot](assests/images/edu.png)
 #### Projects Page
 ![Screenshot](assests/images/projects.jpg)
 #### Contact Page
