@@ -36,6 +36,24 @@
             cursor: pointer;
         }
 
+        /*main>#homePage>section:nth-child(2)>div:nth-child(2){*/
+        /*    animation-name: animateBtn;*/
+        /*    animation-duration: 2s;*/
+        /*    animation-iteration-count: infinite;*/
+        /*}*/
+
+        main>#homePage>section:nth-child(2)>div:nth-child(2):hover {
+            background-color: #E20763;
+        }
+
+        @keyframes animateBtn {
+            0%,3%{transform: rotate(10deg);}
+            4%,7%{transform: rotate(-10deg);}
+            8%,11%{transform: rotate(10deg);}
+            11%,12%{transform: rotate(-10deg);}
+            12%,13%{transform: rotate(10deg);}
+        }
+
         /**{*/
         /*overflow-x: hidden;*/
         /*}*/
@@ -217,6 +235,9 @@
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) {
             margin-left: 10px;
+            /*animation-name: animateBtn;*/
+            /*animation-duration: 2s;*/
+            /*animation-iteration-count: infinite;*/
         }
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
@@ -262,10 +283,10 @@
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) {
             height: 40px;
             width: 100px;
-            background-color: #E20763;
-            border-radius: 20px;
+            border-radius: 50px;
             color: white;
             position: relative;
+            border: 4px solid #E20763;
         }
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2):hover {
@@ -294,7 +315,6 @@
             right: 0;
             bottom: 0;
             margin: auto;
-            color: white;
         }
 
         body > main > section:nth-child(1) > section:nth-child(3) > nav > ul {
@@ -410,15 +430,16 @@
             top: 30px;
             height: 50px;
             width: 178px;
-            background-color: #E20763;
-            border-radius: 8px;
+            border-radius: 50px;
             color: white;
             position: relative;
             font-family: 'Roboto', sans-serif;
+            border: 4px solid #E20763;
         }
 
         main > section:nth-child(2) > section:nth-child(2) > div:hover {
             cursor: pointer;
+            background-color: #E20763;
         }
 
         main > section:nth-child(2) > section:nth-child(2) > div > h3 {
