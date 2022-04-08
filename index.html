@@ -16,6 +16,26 @@
 
     <style>
 
+        main>#contactPage>section:nth-child(1)>#btnSubmit{
+            width: 100px;
+            height: 40px;
+            border-radius: 50px;
+            border: 3px solid #E20763;
+            background: transparent;
+            font-size: 21px;
+            left: 0;
+            position: absolute;
+            margin: auto;
+            bottom: -30px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main>#contactPage>section:nth-child(1)>#btnSubmit:hover{
+            background-color: #E20763;
+        }
+
         main>#contactPage>section:nth-child(2)>img{
             border-style: none;
             position: absolute;
@@ -286,7 +306,7 @@
             border-radius: 50px;
             color: white;
             position: relative;
-            border: 4px solid #E20763;
+            border: 3px solid #E20763;
         }
 
         body > main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2):hover {
@@ -434,7 +454,7 @@
             color: white;
             position: relative;
             font-family: 'Roboto', sans-serif;
-            border: 4px solid #E20763;
+            border: 3px solid #E20763;
         }
 
         main > section:nth-child(2) > section:nth-child(2) > div:hover {
@@ -3929,6 +3949,7 @@
                     <input type="text" placeholder="Message">
                 </div>
             </section>
+            <button id="btnSubmit">Send</button>
         </section>
         <section>
             <ul>
